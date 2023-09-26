@@ -87,12 +87,12 @@ function collectItem() {
     saveGameState(); // Save the game state after collecting items
 
     // Check if a rare item has been found
-    if (item.rarity < 0.1) {
+    if (item.rarity < 0.0005) {
         rareItemFound = true;
         const rarityValueFormatted = formatNumberWithCommas(Math.round(1 / item.rarity));
         
         // Create a message to send to Discord
-        const webhookUrl = "https://discord.com/api/webhooks/1156049577015791636/iL7LFF61fT6ws8_6oGpF84EjXi5LhegfjTBGJMnx4ywsveEmAp39lM61yi-vmWQrDrz-"; // Replace with your actual Discord webhook URL
+        const webhookUrl = "https://discord.com/api/webhooks/1156049581344292864/JsUT2-9ZULK12nwituMMvz3ohOEeC9Xi2MUgcE5tIYYvup78qPm-A7dSNnbmMUUGMBgc"; // Replace with your actual Discord webhook URL
         const message = `something spawned!!!!: ${item.name}: 1/${formatNumberWithCommas(rarityValueFormatted)}`;
     
         // Send the message to Discord
