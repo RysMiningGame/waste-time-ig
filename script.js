@@ -23,66 +23,30 @@ async function sendWebhookMessage(webhookUrl, message) {
 // you can mod this game if you want just give me credit k thx byee
 
 const items = [
-    { name: "germ", rarity: 0.3 },
-    { name: "dust", rarity: 0.2 },
-    { name: "dirt", rarity: 0.15 },
-    { name: "pebbles", rarity: 0.1 },
-    { name: "UGLY DOG", rarity: 0.101 },
-    { name: "a bug", rarity: 0.05 },
-    { name: "grass 😱", rarity: 0.01 },
-    { name: "flower", rarity: 0.002 },
-    { name: "Stick", rarity: 0.002 },
-    { name: "UNWANTED WEED", rarity: 0.001 },
-    { name: "ant hill", rarity: 0.0004 },
-    { name: "a fruit (you probably dont want to eat this)", rarity: 0.0003 },
-    { name: "a tree (SO COL)", rarity: 0.0002 },
-    { name: "a bush (SUPER DUPER COL)", rarity: 0.000134 },
-    { name: "Stone", rarity: 0.0001 },
-    { name: "Slightly less ugly dog", rarity: 0.0001 },
-    { name: "Coal", rarity: 0.0001 },
-    { name: "the ULTIMATE leaf", rarity: 0.00008 },
-    { name: "a measly ant (NOT col)", rarity: 0.00006 },
-    { name: "a stinky fart (EWWW)", rarity: 0.00004 },
-    { name: "Iron", rarity: 0.00004 },
-    { name: "solid bar of dirt (kinda col?)", rarity: 0.000032 },
-    { name: "magnetic dirt (epic!)", rarity: 0.000021 },
-    { name: "Silver", rarity: 0.00002 },
-    { name: "Metal", rarity: 0.0000133333 },
-    { name: "Steel", rarity: 0.0000133333 },
-    { name: "slightly rarer grass 😱 (tastes like salt)", rarity: 0.0000132 },
-    { name: "what do i name this", rarity: 0.000012 },
-    { name: "salt (tastes like slightly rarer grass)", rarity: 0.00001 },
-    { name: "Pepper (Feels like Slightly rarer grass)", rarity: 0.00001 },
-    { name: "Tinted slightly purple void (IT STINGS!!!)", rarity: 0.00001 },
-    { name: "the skibidi toiliet or creepear", rarity: 0.0000067 },
-    { name: "Avocado", rarity: 0.000005 },
-    { name: "Fruity dog 0.01% power", rarity: 0.0000045 },
-    { name: "mr. dust", rarity: 0.0000025 },
-    { name: "WANTED WEED??? (why is it wanted?)", rarity: 0.000002 },
-    { name: "Dirt V2", rarity: 0.000002 },
-    { name: "I know what to name this", rarity: 0.0000012 },
-    { name: "turtle v1", rarity: 0.000001000001 },
-    { name: "Gold", rarity: 0.00000100000000000000001 },
-    { name: "rare crystal v0.001", rarity: 0.000001 },
-    { name: "Boulder ", rarity: 0.0000004 },
-    { name: "kevin (kevin (kevin (kevin)))", rarity: 0.0000001 },
-    { name: "Diamond", rarity: 0.0000001 },
-    { name: "Green orb?? (I think it's a lore reference)", rarity: 0.0000001 },
-    { name: "19$ Fortnite card", rarity: 0.00000005263158 },
-    { name: "no more cardboard eating in general", rarity: 0.00000005 },
-    { name: "Polychromatic Light", rarity: 0.00000003081689 },
-    { name: "Non innocent oceanic creature 1/???", rarity: 0.0000000131925999 },
-    { name: "EL GATO V0.001", rarity: 0.0000000100000001 },
-    { name: "John (OMG JOHN PULSAR REFERENCE??!??!?!)", rarity: 0.00000001 },
-    { name: "FRUITY DOG", rarity: 0.0000000045 },
-    { name: "funny germ (he dont bite)", rarity: 0.000000002 },
-    { name: "deciduous_germ", rarity: 0.000000001304811684 },
-    { name: "STUPID BABY V0.000000001", rarity: 0.000000001000000001 },
-    { name: "bacteria (he bites)", rarity: 0.000000001 },
-    { name: "roundcat", rarity: 0.000000000747551768 },
-    { name: "Ultimate stew (Yummers!)", rarity: 0.0000000005 },
-    { name: "CHICKEN 0.00000001% POWER", rarity: 0.0000000001 },
-    { name: "CAT", rarity: 0.000000000001000000000001 },
+    { name: "stone frfr", rarity: 0.3 },
+    { name: "grafell", rarity: 0.1 },
+    { name: "a slice of orange", rarity: 0.6 },
+    { name: "foot(pappy)", rarity: 0.01 },
+    { name: "play rys mining game on roblox", rarity: 0.001 },
+    { name: "STINKY FEET (pappy's brother)", rarity: 0.00010001 },
+    { name: "wytttgrss promotion", rarity: 0.0001 },
+    { name: "rumdiddlydumdum", rarity: 0.0000074 },
+    { name: "Blazing Bolts", rarity: 0.000002 },
+    { name: "gnarp gnarp", rarity: 0.0000015 },
+    { name: "Ambatakum 0.001%", rarity: 0.00000144927 },
+    { name: "how did yo get this", rarity: 0.000001 },
+    { name: "roundcat pulsar", rarity: 0.000001 },
+    { name: "Cat (original name COPS HERE I GOT ARRESTED SOMEONE PLEASE DONT DEPORT ME)", rarity: 2e-7 },
+    { name: "coffee", rarity: 0.00000015 },
+    { name: "ash", rarity: 0.0000001 },
+    { name: "Protogen mask(lore)", rarity: 0.0000001 },
+    { name: "Skibidi dibidi toilat", rarity: 0.0000001 },
+    { name: "pan's minarion", rarity: 0.000000087 },
+    { name: "Jade(John's Sister(OMG JOHN PULSAR REFRENCE))", rarity: 0.00000001 },
+    { name: "The almighty god pappy", rarity: 0.000000001 },
+    { name: "The almighty god ry", rarity: 0.000000001 },
+
+
     
 ];
 
@@ -123,13 +87,13 @@ function collectItem() {
     saveGameState(); // Save the game state after collecting items
 
     // Check if a rare item has been found
-    if (item.rarity < 0.000005) {
+    if (item.rarity < 0.1) {
         rareItemFound = true;
         const rarityValueFormatted = formatNumberWithCommas(Math.round(1 / item.rarity));
         
         // Create a message to send to Discord
-        const webhookUrl = "https://discord.com/api/webhooks/1156031812636774482/COhSzDROD_iK3qIswEqD1F-G-ssFA5i7KpIt44hoJXZhfyNgsKT_vtY5oCleWAxaP6sU"; // Replace with your actual Discord webhook URL
-        const message = `COOL THINGY FOUND 😱😱😱⁉️⁉️🙏🙏😹💯🙅‍♂️💯💯🔥🔥😱👍👍💀🙏🙏🙅‍♂️💯⁉️: ${item.name}: 1/${formatNumberWithCommas(rarityValueFormatted)}`;
+        const webhookUrl = "https://discord.com/api/webhooks/1156049577015791636/iL7LFF61fT6ws8_6oGpF84EjXi5LhegfjTBGJMnx4ywsveEmAp39lM61yi-vmWQrDrz-"; // Replace with your actual Discord webhook URL
+        const message = `something spawned!!!!: ${item.name}: 1/${formatNumberWithCommas(rarityValueFormatted)}`;
     
         // Send the message to Discord
         sendWebhookMessage(webhookUrl, message);
