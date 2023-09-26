@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ff9595;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background-color: #ffd1a3;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    /* Remove the box-shadow to eliminate the square above the header */
+}
+
+header {
+    background: transparent;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+ 
+p1 {
+    color: #333;
+    font-size: 18px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#item-container {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Lato', sans-serif; /* Change the font for the item container */
+    background: transparent; /* Remove any background color */
+}
+
+#item-counters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif; /* Change the font for the item counters */
+}
+
+#item-counters p {
+    font-size: 18px;
+    margin: 5px 0;
+    font-family: 'Poppins', sans-serif; /* Change the font for the item counter text */
+}
+
+#item-counters span {
+    font-weight: bold;
+    color: #333;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; /* Change the font for the item counter numbers */
+}
